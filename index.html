@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandan Pabolu - Solutions Architect & AI Engineer</title>
+    <meta name="description" content="Personal portfolio of Nandan Pabolu - Solutions Architect Intern at AWS, AI/ML Engineer, and Computer Science student at UT Dallas">
+    <meta name="keywords" content="Nandan Pabolu, Solutions Architect, AWS, AI Engineer, Computer Science, Portfolio">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#accomplishments" class="nav-link">Accomplishments</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Nandan Pabolu</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Solutions Architect & AI Engineer</h2>
+                    <p class="hero-description">
+                        Passionate about building scalable cloud solutions and AI-powered applications. 
+                        Currently interning at AWS, crafting serverless architectures and exploring the frontiers of artificial intelligence.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="mailto:nandan.pabolu808@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/nandanpabolu" class="social-link" aria-label="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nandanpabolu" class="social-link" aria-label="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a Computer Science student at The University of Texas at Dallas, graduating in May 2026. 
+                        Currently working as a Solutions Architect Intern at Amazon Web Services, where I design and 
+                        implement cutting-edge serverless AI solutions.
+                    </p>
+                    <p>
+                        My passion lies in building scalable cloud architectures and AI-powered applications that solve 
+                        real-world problems. I have extensive experience with AWS services, machine learning pipelines, 
+                        and full-stack development.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dallas, Texas</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>UT Dallas - May 2026</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Solutions Architect Intern @ AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-content">
+                            <h3>Current Focus</h3>
+                            <ul>
+                                <li>Serverless AI Architectures</li>
+                                <li>Cloud Solutions Design</li>
+                                <li>Machine Learning Engineering</li>
+                                <li>Full-Stack Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">HTML</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cloud"></i>
+                        AWS Cloud Services
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">Step Functions</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">CloudFront</span>
+                        <span class="skill-tag">EventBridge</span>
+                        <span class="skill-tag">SQS</span>
+                        <span class="skill-tag">IAM</span>
+                        <span class="skill-tag">WAF</span>
+                        <span class="skill-tag">KMS</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">X-Ray</span>
+                        <span class="skill-tag">QuickSight</span>
+                        <span class="skill-tag">Bedrock</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-layer-group"></i>
+                        Frameworks & Libraries
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        AI/ML & Data Science
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Ollama</span>
+                        <span class="skill-tag">Chroma</span>
+                        <span class="skill-tag">Bedrock Nova Reels</span>
+                        <span class="skill-tag">Amazon Transcribe</span>
+                        <span class="skill-tag">Amazon Polly</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Sentiment Analysis</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Fine-Tuning</span>
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">Multimodal AI</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Database Management
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        DevOps & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3 class="certifications-title">
+                    <i class="fas fa-certificate"></i>
+                    AWS Certifications
+                </h3>
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS Certified Solutions Architect Associate</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS Certified AI Practitioner</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS Cloud Practitioner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Solutions Architect Intern</h3>
+                            <span class="company">Amazon Web Services (AWS)</span>
+                            <span class="location">Austin, Texas</span>
+                            <span class="duration">May 2025 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <div class="project">
+                                <h4><i class="fas fa-video"></i> Lumina — Serverless AI Media Pipeline</h4>
+                                <p>Orchestrated 5+ Lambda microservices with Step Functions for Bedrock Nova Reels video generation, Polly dubbing, and Transcribe captioning. Delivered 30-second videos in &lt;3 minutes (≈80% faster) through parallel-processing and hierarchical assembly engines.</p>
+                            </div>
+                            
+                            <div class="project">
+                                <h4><i class="fas fa-tachometer-alt"></i> Performance & Cost Optimization</h4>
+                                <p>Cut media I/O ~70% via ephemeral /tmp + S3 multi-part uploads. Reduced cold starts ~40% with Lambda Layers and provisioned concurrency. Implemented CloudWatch/X-Ray monitoring with SLOs.</p>
+                            </div>
+                            
+                            <div class="project">
+                                <h4><i class="fas fa-shield-alt"></i> Security & Production Readiness</h4>
+                                <p>Implemented least-privilege IAM, KMS-encrypted S3, CloudFront signed URLs, WAF, and exponential backoff. Passed security review gates and prepared AWS blog demo for production-grade workflows.</p>
+                            </div>
+                            
+                            <div class="project">
+                                <h4><i class="fas fa-gamepad"></i> AWS Tetris — re:Invent 2025 Builders Fair POC</h4>
+                                <p>Built real-time multiplayer game using API Gateway WebSocket + Lambda + DynamoDB achieving &lt;100ms state sync and ~60% less network chatter vs polling.</p>
+                            </div>
+                            
+                            <div class="project">
+                                <h4><i class="fas fa-chart-line"></i> PEAK — Promotion Evaluation & Analysis Kit</h4>
+                                <p>Internal AI tool saving managers 30-40 hours/quarter by auto-critiquing promotion documents. Fine-tuned Claude 4 Sonnet with unified telemetry from 15+ sources into QuickSight dashboards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI/ML Engineering Intern</h3>
+                            <span class="company">Skoob.ai</span>
+                            <span class="location">Remote</span>
+                            <span class="duration">May 2024 - July 2024</span>
+                        </div>
+                        <div class="timeline-description">
+                            <div class="achievement">
+                                <p><i class="fas fa-arrow-up text-success"></i> Developed RAG pipeline enhancing chatbot capabilities, resulting in <strong>25% increase in user engagement</strong></p>
+                            </div>
+                            <div class="achievement">
+                                <p><i class="fas fa-arrow-up text-success"></i> Engineered sentiment analysis pipeline for CSAT feedback, achieving <strong>40% improvement in sentiment detection accuracy</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Chatbot with RAG Pipeline</h3>
+                        <p>Privacy-focused Streamlit application integrating local LLMs with RAG for contextual question-answering. Improved query accuracy by 35% using Python 3.12+, LangChain, Chroma, and Ollama.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>Streamlit</span>
+                            <span>Chroma</span>
+                            <span>Ollama</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-arrow-up"></i>
+                                35% accuracy improvement
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Stock Predictor/Bot</h3>
+                        <p>Hybrid predictive model combining linear regression and moving averages with sentiment analysis of web-scraped news. Features real-time visualizations and interactive UI.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>Web Scraping</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-arrow-up"></i>
+                                20% prediction accuracy boost
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-clock"></i>
+                                +15% responsiveness
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Responsive portfolio with Streamlit-powered contact form and server-side email automation. Built with modern CSS, SCSS, HTML, and JavaScript for cross-device compatibility.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS/SCSS</span>
+                            <span>JavaScript</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-arrow-up"></i>
+                                40% more user interaction
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-mobile-alt"></i>
+                                30% mobile engagement boost
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="View code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated DMV Appointment System</h3>
+                        <p>Node.js/TypeScript bot for DMV appointment scheduling with Docker-based CI/CD pipeline. Significantly reduced user wait times and improved deployment efficiency.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-arrow-down"></i>
+                                90% wait time reduction
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-thumbs-up"></i>
+                                95% satisfaction rate
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-server"></i>
+                                50% less downtime
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments" class="accomplishments section">
+        <div class="container">
+            <h2 class="section-title">Accomplishments & Recognition</h2>
+            <div class="accomplishments-grid">
+                <div class="accomplishment-card featured">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>AWS Global AI Expo Winner</h3>
+                        <p class="accomplishment-date">June 2025</p>
+                        <p class="accomplishment-description">
+                            Recognized for innovative AI solutions and technical excellence at the global level.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>NextGenius National Merit Scholar</h3>
+                        <p class="accomplishment-date">March 2022</p>
+                        <p class="accomplishment-description">
+                            National recognition for academic excellence and potential.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>Co-Founder - Optigrit Technologies</h3>
+                        <p class="accomplishment-date">May 2024</p>
+                        <p class="accomplishment-description">
+                            Educational learning platform focused on optimizing student learning experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>Co-Founder - CS Fraternity at UTD</h3>
+                        <p class="accomplishment-date">September 2023</p>
+                        <p class="accomplishment-description">
+                            Building a community for Computer Science students at UT Dallas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>Co-Founder - Ahar Food Delivery</h3>
+                        <p class="accomplishment-date">January 2024</p>
+                        <p class="accomplishment-description">
+                            Innovative food delivery startup focused on improving local food accessibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or just having a conversation about technology and innovation.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <a href="mailto:nandan.pabolu808@gmail.com" class="method-value">
+                                    nandan.pabolu808@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="method-label">Phone</span>
+                                <a href="tel:+19452136993" class="method-value">
+                                    (945) 213-6993
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Dallas, Texas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/nandanpabolu" class="social-btn" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/nandanpabolu" class="social-btn" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-btn" target="_blank" aria-label="Portfolio">
+                            <i class="fas fa-globe"></i>
+                            <span>Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Nandan Pabolu. All rights reserved.</p>
+                    <p>Built with ❤️ and deployed on GitHub Pages</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

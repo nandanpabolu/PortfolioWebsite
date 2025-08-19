@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nandanpabolu.github.io/Project_Portfolio/sitemap.xml
