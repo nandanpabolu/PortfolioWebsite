@@ -525,6 +525,9 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.transform = `translateY(${rate * speed}px) rotate(${scrolled * 0.1}deg)`;
         });
     });
+
+    // Initialize resume download functionality
+    initResumeDownload();
 });
 
 // Add loading animation
@@ -613,3 +616,121 @@ document.addEventListener('click', function(e) {
         trackEvent('Project', 'Click', 'Project Link');
     }
 });
+
+// Resume download functionality
+function initResumeDownload() {
+    const resumeButtons = document.querySelectorAll('.resume-btn');
+    
+    resumeButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            downloadResume();
+        });
+    });
+}
+
+function downloadResume() {
+    // Check if resume.pdf exists
+    fetch('resume.pdf', { method: 'HEAD' })
+        .then(response => {
+            if (response.ok) {
+                // Resume exists, download it
+                const link = document.createElement('a');
+                link.href = 'resume.pdf';
+                link.download = 'Nandan_Pabolu_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                showNotification('📄 Resume downloaded successfully!', 'success');
+            } else {
+                // Resume doesn't exist, generate temporary one
+                generateTemporaryResume();
+            }
+        })
+        .catch(() => {
+            // Error occurred, generate temporary one
+            generateTemporaryResume();
+        });
+}
+
+function generateTemporaryResume() {
+    const resumeContent = `NANDAN PABOLU
+Solutions Architect & AI Engineer
+nandan.pabolu808@gmail.com | (945) 213-6993 | Dallas, Texas
+
+EDUCATION
+The University of Texas at Dallas | Computer Science | Expected May 2026
+
+EXPERIENCE
+AWS Solutions Architect Intern | May 2024 - Present
+• Designed serverless architectures using AWS Lambda, API Gateway, and DynamoDB
+• Implemented CI/CD pipelines using AWS CodePipeline and CodeBuild
+
+AI/ML Engineering Intern, Skoob.ai | May 2024 - July 2024
+• Developed RAG pipeline enhancing chatbot capabilities (25% user engagement increase)
+• Engineered sentiment analysis pipeline (40% accuracy improvement)
+
+Software Developer Intern, FeedOne Org | March 2022 - July 2022
+• Overhauled web interfaces reducing data retrieval times by 60%
+• Designed AI-driven logistics system securing $50,000 government funding
+
+SKILLS
+Programming: Python, JavaScript, Java, TypeScript, C/C++
+Cloud: AWS Lambda, Step Functions, EC2, API Gateway, DynamoDB, S3
+AI/ML: LangChain, RAG, Ollama, NLP, Sentiment Analysis
+Frameworks: React.js, Node.js, Django, Streamlit
+
+CERTIFICATIONS
+AWS Solutions Architect Associate, AWS AI Practitioner, AWS Cloud Practitioner
+
+This is a temporary resume. Please contact me for the full version.`;
+
+    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Nandan_Pabolu_Resume_Temp.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    
+    showNotification('📄 Temporary resume generated and downloaded!', 'success');
+}
+
+function showNotification(message, type = 'info') {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.textContent = message;
+    
+    // Add styles
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 1rem 1.5rem;
+        background: ${type === 'success' ? '#10b981' : '#3b82f6'};
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    `;
+    
+    document.body.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+    }, 100);
+    
+    // Remove after 5 seconds
+    setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 5000);
+}

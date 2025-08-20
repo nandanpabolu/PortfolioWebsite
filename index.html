@@ -35,6 +35,10 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-controls">
+                <a href="#" class="nav-resume-btn resume-btn" id="nav-resume-download">
+                    <i class="fas fa-file-pdf"></i>
+                    Resume
+                </a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -61,8 +65,18 @@
                         Currently interning at AWS, crafting serverless architectures and exploring the frontiers of artificial intelligence.
                     </p>
                     <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#" class="btn btn-accent resume-btn" id="resume-download">
+                            <i class="fas fa-file-pdf"></i>
+                            Download Resume
+                        </a>
                     </div>
                     <div class="hero-social">
                         <a href="mailto:nandan.pabolu808@gmail.com" class="social-link" aria-label="Email">
@@ -78,7 +92,10 @@
                 </div>
                 <div class="hero-image">
                     <div class="hero-avatar">
-                        <div class="avatar-placeholder">
+                        <!-- Replace 'profile.jpg' with your actual profile picture -->
+                        <img src="profile.jpg" alt="Nandan Pabolu - Solutions Architect & AI Engineer" class="profile-picture" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-placeholder" style="display: none;">
                             <i class="fas fa-user"></i>
                         </div>
                     </div>
@@ -158,6 +175,7 @@
                     </h3>
                     <div class="skills-list">
                         <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">C/C++</span>
@@ -259,19 +277,31 @@
                     AWS Certifications
                 </h3>
                 <div class="cert-list">
-                    <div class="cert-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS Certified Solutions Architect Associate</span>
+                    <!-- Official Credly Embeds with Live Verification -->
+                    <div class="cert-item-embed">
+                        <div class="credly-embed-container">
+                            <div class="cert-embed-title">AWS Certified Solutions Architect Associate</div>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="83b33cd1-429a-40d0-8c2f-63e20237f9ee" data-share-badge-host="https://www.credly.com"></div>
+                        </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS Certified AI Practitioner</span>
+                    
+                    <div class="cert-item-embed">
+                        <div class="credly-embed-container">
+                            <div class="cert-embed-title">AWS Certified AI Practitioner</div>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b2439d55-9c3e-4ead-b509-f3ed148b5378" data-share-badge-host="https://www.credly.com"></div>
+                        </div>
                     </div>
-                    <div class="cert-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS Cloud Practitioner</span>
+                    
+                    <div class="cert-item-embed">
+                        <div class="credly-embed-container">
+                            <div class="cert-embed-title">AWS Cloud Practitioner</div>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d70532f7-caf5-4b02-99e8-c88abd781d3c" data-share-badge-host="https://www.credly.com"></div>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Load Credly Script (only once at the bottom) -->
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </div>
         </div>
     </section>
@@ -288,7 +318,7 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>Solutions Architect Intern</h3>
-                            <span class="company">Amazon Web Services (AWS)</span>
+                            <span class="company"><a href="https://aws.amazon.com" target="_blank">Amazon Web Services (AWS)</a></span>
                             <span class="location">Austin, Texas</span>
                             <span class="duration">May 2025 - Present</span>
                         </div>
@@ -309,7 +339,7 @@
                             </div>
                             
                             <div class="project">
-                                <h4><i class="fas fa-gamepad"></i> AWS Tetris — re:Invent 2025 Builders Fair POC</h4>
+                                <h4><i class="fas fa-gamepad"></i> AWS Tetris — <a href="https://reinvent.awsevents.com/" target="_blank">re:Invent 2025</a> Builders Fair POC</h4>
                                 <p>Built real-time multiplayer game using API Gateway WebSocket + Lambda + DynamoDB achieving &lt;100ms state sync and ~60% less network chatter vs polling.</p>
                             </div>
                             
@@ -328,16 +358,46 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>AI/ML Engineering Intern</h3>
-                            <span class="company">Skoob.ai</span>
-                            <span class="location">Remote</span>
+                            <span class="company"><a href="https://skoob.ai/" target="_blank">Skoob.ai</a></span>
+                            <span class="location">Bangalore, Karnataka</span>
                             <span class="duration">May 2024 - July 2024</span>
                         </div>
                         <div class="timeline-description">
-                            <div class="achievement">
-                                <p><i class="fas fa-arrow-up text-success"></i> Developed RAG pipeline enhancing chatbot capabilities, resulting in <strong>25% increase in user engagement</strong></p>
+                            <div class="project">
+                                <h4><i class="fas fa-comments"></i> RAG Pipeline Development</h4>
+                                <p>Developed a Retrieval-Augmented Generation (RAG) pipeline to enhance chatbot capabilities, resulting in a <strong>25% increase in user engagement</strong> by providing context-aware responses</p>
                             </div>
-                            <div class="achievement">
-                                <p><i class="fas fa-arrow-up text-success"></i> Engineered sentiment analysis pipeline for CSAT feedback, achieving <strong>40% improvement in sentiment detection accuracy</strong></p>
+                            <div class="project">
+                                <h4><i class="fas fa-heart"></i> Sentiment Analysis Pipeline</h4>
+                                <p>Engineered an advanced sentiment analysis pipeline for Customer Satisfaction (CSAT) feedback, achieving a <strong>40% improvement in sentiment detection accuracy</strong> using NLP techniques</p>
+                            </div>
+                            <div class="project">
+                                <h4><i class="fas fa-volume-up"></i> Text-to-Speech Pipeline</h4>
+                                <p>Architected an automated Text-to-Speech (TTS) pipeline leveraging OpenAI API, increasing content accessibility and boosting user consumption by <strong>35%</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer Intern</h3>
+                            <span class="company"><a href="https://convoyofhope.org/feedone/" target="_blank">FeedOne Org</a></span>
+                            <span class="location">Bangalore, Karnataka</span>
+                            <span class="duration">March 2022 - July 2022</span>
+                        </div>
+                        <div class="timeline-description">
+                            <div class="project">
+                                <h4><i class="fas fa-chart-line"></i> Web Interface Overhaul</h4>
+                                <p>Overhauled web interfaces leveraging JavaScript, AJAX, and Plotly to facilitate dynamic data representation, <strong>reducing data retrieval times by 60%</strong> and enhancing user interaction</p>
+                            </div>
+                            <div class="project">
+                                <h4><i class="fas fa-route"></i> AI-Driven Logistics System</h4>
+                                <p>Designed an AI-driven logistics system that optimized meal delivery routes, <strong>reducing delivery time by 30%</strong>, and was showcased in a government executive interview with the chief minister of Karnataka, <strong>securing $50,000 in funding</strong></p>
                             </div>
                         </div>
                     </div>
@@ -356,14 +416,6 @@
                         <div class="project-icon">
                             <i class="fas fa-comments"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" aria-label="View project">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="View code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
                     </div>
                     <div class="project-content">
                         <h3>Personal Chatbot with RAG Pipeline</h3>
@@ -381,6 +433,12 @@
                                 35% accuracy improvement
                             </span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/nandanpabolu/Local_Rag_System" class="project-link" aria-label="View source code" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -388,14 +446,6 @@
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" aria-label="View project">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="View code">
-                                <i class="fab fa-github"></i>
-                            </a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -417,6 +467,16 @@
                                 +15% responsiveness
                             </span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://stockpredictor-nandanpabolu.streamlit.app" class="project-link" aria-label="View live demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/nandanpabolu/StockPredictor" class="project-link" aria-label="View source code" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -424,14 +484,6 @@
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" aria-label="View project">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="View code">
-                                <i class="fab fa-github"></i>
-                            </a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -453,6 +505,7 @@
                                 30% mobile engagement boost
                             </span>
                         </div>
+
                     </div>
                 </div>
 
@@ -460,14 +513,6 @@
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" aria-label="View project">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="project-link" aria-label="View code">
-                                <i class="fab fa-github"></i>
-                            </a>
                         </div>
                     </div>
                     <div class="project-content">
@@ -493,6 +538,82 @@
                                 50% less downtime
                             </span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://replit.com/@nandanpabolu808/texas-dps-scheduler#example.config.yml" class="project-link" aria-label="View live demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LeetCode Solutions & Journey</h3>
+                        <p>Comprehensive collection of LeetCode solutions including multiple Hard problems, algorithmic thinking patterns, and my coding journey. Features detailed explanations, multiple approaches, and performance optimizations.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-trophy"></i>
+                                Multiple LC Hard solutions
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-book"></i>
+                                Detailed whitepapers
+                            </span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/nandanpabolu/Leetcode" class="project-link" aria-label="View source code" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blindly - Blind Dating App</h3>
+                        <p>Innovative blind dating application currently in development, focusing on personality-based matching and meaningful connections. Built with modern web technologies and AI-powered compatibility algorithms.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AI/ML</span>
+                            <span>MongoDB</span>
+                            <span>WebRTC</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <i class="fas fa-rocket"></i>
+                                In Development
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-users"></i>
+                                Personality Matching
+                            </span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/nandanpabolu/blindly" class="project-link" aria-label="View source code" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -505,6 +626,19 @@
             <h2 class="section-title">Accomplishments & Recognition</h2>
             <div class="accomplishments-grid">
                 <div class="accomplishment-card featured">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>AWSome Award at AWS</h3>
+                        <p class="accomplishment-date">2025</p>
+                        <p class="accomplishment-description">
+                            Recognized for valuable contributions to the PEAK Tool, demonstrating exceptional technical excellence and innovation in AI-powered solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
                     <div class="accomplishment-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
@@ -568,6 +702,47 @@
                         </p>
                     </div>
                 </div>
+
+
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>AWS Blog Contributor</h3>
+                        <p class="accomplishment-date">2025</p>
+                        <p class="accomplishment-description">
+                            Technical blog post on serverless AI architectures currently in progress - POC going through security reviews for publication.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3>40% Sentiment Analysis Accuracy Improvement</h3>
+                        <p class="accomplishment-date">2024</p>
+                        <p class="accomplishment-description">
+                            Engineered advanced NLP pipeline that significantly enhanced customer satisfaction feedback analysis at Skoob.ai.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="accomplishment-content">
+                        <h3><a href="https://anuragsingal.medium.com/cas-with-a-difference-prakash-kedia-sunny-agarwal-and-engineer-manas-agarwal-nandan-pabolu-c8ac6800e272" target="_blank">$50,000 Government Funding Secured</a></h3>
+                        <p class="accomplishment-date">2022</p>
+                        <p class="accomplishment-description">
+                            Successfully secured government funding for AI-driven logistics system at FeedOne Org, showcased to Karnataka Chief Minister. Featured in <a href="https://anuragsingal.medium.com/cas-with-a-difference-prakash-kedia-sunny-agarwal-and-engineer-manas-agarwal-nandan-pabolu-c8ac6800e272" target="_blank">Medium article</a>.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -623,7 +798,7 @@
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="#" class="social-btn" target="_blank" aria-label="Portfolio">
+                        <a href="https://nandanpabolu.github.io/Project_Portfolio" class="social-btn" target="_blank" aria-label="Portfolio">
                             <i class="fas fa-globe"></i>
                             <span>Portfolio</span>
                         </a>
@@ -631,7 +806,7 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mkgzlrqe" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -651,6 +826,10 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
+                        
+                        <!-- Hidden field to identify the form -->
+                        <input type="hidden" name="_next" value="https://nandanpabolu.github.io/Project_Portfolio/#contact">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
                         
                         <button type="submit" class="btn btn-primary btn-full">
                             <i class="fas fa-paper-plane"></i>
